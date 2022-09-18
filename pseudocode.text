@@ -1,0 +1,36 @@
+Deklarasi :
+      makanan, minuman, jml, prg : interger
+      hrg : double
+      total : float
+Deskripsi :
+Begin
+pesanan
+        Write ( menu makanan )   
+        Write ( masukkan pesanan anda )
+        Input ( makanan )
+        Read ( makanan )    
+              if ( makanan <= 0 ) OR ( makanan > 2 ) then
+                 Write ( menu tdk ada )
+                 goto ( pesanan )
+            end if     
+pesanan2
+        Write ( menu minuman )   
+        Write ( masukkan pesanan anda )
+        Input ( minuman )
+        Read ( minuman )    
+              if ( minuman <= 0 ) OR ( minuman > 2 ) then
+                 Write ( menu tdk ada )
+                 goto ( pesanan2 )
+            end if     
+write ( jumlah pesanan anda )
+input ( jml )
+read ( jml )
+pengiriman
+         Write ( apakah bersedia menunggu? )
+         Write ( masukkan pilihan anda )
+         Input ( prg )
+         read ( prg )
+         If ( prg <= 0 ) OR ( prg > 2 ) then
+            Write ( status pengiriman tdk ada )
+            goto ( pengiriman ) 
+         end if
